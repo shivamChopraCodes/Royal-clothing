@@ -32,9 +32,10 @@ function App({ currentUser, setCurrentUser }) {
           );
 
         })
-      } else {
-        setCurrentUser(userAuth);
-      }
+      } 
+      
+      setCurrentUser(userAuth);
+      
 
     });
 
