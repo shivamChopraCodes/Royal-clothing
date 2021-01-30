@@ -21,6 +21,9 @@ const CheckoutPage = ({cartItems , total}) => (
                 <span>Quantity</span>
             </div>
             <div className='header-block'>
+                <span>Price</span>
+            </div>
+            <div className='header-block'>
                 <span>Remove</span>
             </div>
         </div>
@@ -28,7 +31,7 @@ const CheckoutPage = ({cartItems , total}) => (
             cartItems.map(cartItem => <CheckoutItem key={cartItem.id} cartItem={cartItem} />)
         }
         <div className='total'>
-            <span>Total: ${total}</span>
+            <span>Total: ₹{72*total}</span>
         </div>
         <div className='test-warning'>
             *Please use the test credit card for payments*
@@ -36,7 +39,7 @@ const CheckoutPage = ({cartItems , total}) => (
             4242 4242 4242 4242
             EXP: 01/21- CVV:123
         </div>
-        <StripeCheckoutButton price={total} />
+        <StripeCheckoutButton price={72*total} />
     </div>
 );
 

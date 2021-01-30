@@ -66,4 +66,15 @@
         font-size: 16px;
       }
     }
+
+    @media screen and (max-width: 800px) {
+
+      width: 18rem;
+      height: 15rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0.5rem;
+    }
+
   }
